@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table,
+        th,
+        td{
+            border: 0px solid black;
+            text-align: left;
+        }
+
+        input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1> pendaftaran calon mhs baru</h1>
+    <form method="post" action=" ">
+        <fieldset style="float: left;"
+        <legend> biodata Calon Mhs</legend>
+        <table>
+            <tr>
+                <th> No. Daftar </th>
+                <th>:</th>
+                <td><input type="text" name="nodaftar" size="40" /></td>
+            </tr>
+            <tr>
+                <th>nama</th>
+                <th>:</th>
+                <td><input type="text" name="nama" size="40"/></td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <th>:</th>
+                <td><textarea name="Alamat" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="male">Jenis kelamin</label></th>
+                <th>:</th>
+                <td>
+                    <input type="radio" value="L" name="gender"/>Laki - Laki
+                    <input type="radio" value="P" name="gender"/>perempuan
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset style="float: left;">
+        <legend>pendaftaran</legend>
+        <table style="padding: 10px;">
+            <tr>
+                <th>Penerimaan</th>
+                <th>:</th>
+                <td>
+                    <select name="gelombang">
+                        <option value="01">gelombang 1</option>
+                        <option value="02">gelombang 2</option>
+                        <option value="03">gelombang 3</option>
+                        <option value="04">gelombang 4</option>
+                        <option value="05">gelombang 5</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th> Program Studi</th>
+                <th>:</th>
+                <td>
+                    <select name="Program Studi">
+                        <option value="1">Pilih salah satu</option>
+                        <optgroup label="Fakultas Ilmu Komputer dan rekayasa">
+                            <option value="S1" > Sistem Informasi</option>
+                            <option value="IF" >Informatika</option>
+                            <option value="TE" >Teknik Elektro</option>
+                        </optgroup>
+                        <optgroup label="Fakultas Ekonomi dan Bisnis">
+                            <option value="ME">Manajemen</option>
+                            <option value="AK">Akutansi</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Biaya pendaftaran</th>
+                <th>:</th>
+                <td><input type="number" name="Biaya"/></td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <th></th>
+                <td><input type="submit"/><input type="reset"/></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
